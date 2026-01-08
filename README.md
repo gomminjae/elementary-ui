@@ -119,5 +119,3 @@ This repo also contains the [BrowserRuntime](BrowserRuntime) JavaScript package 
 ---
 
 *SwiftUI is a trademark of Apple Inc. This project is not affiliated with or connected to Apple in any way.*
-
-<a rel="me" href="https://mastodon.social/@elementarycodes" style="display: none">Mastodon</a>
