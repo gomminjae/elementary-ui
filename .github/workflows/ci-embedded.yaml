@@ -1,0 +1,44 @@
+name: Build Embedded Snapshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.swift"
+      - "**.yml"
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - "**/README.md"
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        swift:
+          - version: 6.3-snapshot-2026-01-09
+            wasm-sdk-url: https://download.swift.org/swift-6.3-branch/wasm-sdk/swift-6.3-DEVELOPMENT-SNAPSHOT-2026-01-09-a/swift-6.3-DEVELOPMENT-SNAPSHOT-2026-01-09-a_wasm.artifactbundle.tar.gz
+            wasm-sdk-checksum: 9fba6f3f2fc5346e053fa99c623f36dd6f5fd35fd287064c0f0d0869b1f7b33a
+            wasm_sdk_id: swift-6.3-DEVELOPMENT-SNAPSHOT-2026-01-09-a_wasm-embedded
+
+          - version: main-snapshot-2026-01-09
+            wasm-sdk-url: https://download.swift.org/development/wasm-sdk/swift-DEVELOPMENT-SNAPSHOT-2026-01-09-a/swift-DEVELOPMENT-SNAPSHOT-2026-01-09-a_wasm.artifactbundle.tar.gz
+            wasm-sdk-checksum: cbea924333df569d19340f618e31e593f808e45115f79217b6d3282e64683cf1
+            wasm_sdk_id: swift-DEVELOPMENT-SNAPSHOT-2026-01-09-a_wasm-embedded
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: vapor/swiftly-action@v0.2
+        with:
+          toolchain: ${{ matrix.swift.version }}
+
+      - name: Install Swift WASM SDK
+        run: swift sdk install ${{ matrix.swift.wasm-sdk-url }} --checksum ${{ matrix.swift.wasm-sdk-checksum }}
+
+      - name: Build
+        run: swift build --swift-sdk ${{ matrix.swift.wasm_sdk_id }}
