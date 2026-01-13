@@ -44,13 +44,9 @@ struct Counter {
 > If you want this to exist and keep improving, sponsorship funds the work.  
 > [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/sliemeobn)
 
-## Get Started
-
-Go from zero to Swift-in-the-browser in minutes, with the **[Vite Starter](https://github.com/elementary-swift/starter-vite)** template.
-
 ## Guides & Documentation
 
-- **Guide**: [elementary.codes](https://elementary.codes)
+- **Guide & Get Started**: [elementary.codes](https://elementary.codes)
 - **API docs**: [Swift Package Index](https://swiftpackageindex.com/elementary-swift/elementary-ui/documentation)
 
 ## Example
