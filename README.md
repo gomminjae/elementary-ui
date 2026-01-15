@@ -47,8 +47,8 @@ struct Counter {
 > The ambition is simple: make Swift a first-class option for building serious web applications, and keep the project healthy for the long run.
 
 <p align="center">
-  Thank you to everyone supporting this open‑source project financially.
-  <br>Please consider joining them by <a href="https://github.com/sponsors/sliemeobn" target="_blank" rel="noopener">sponsoring ElementaryUI</a>.
+  <i>Thank you to everyone supporting this open‑source project financially.
+  <br>Please consider joining them by <a href="https://github.com/sponsors/sliemeobn" target="_blank" rel="noopener">sponsoring ElementaryUI</a>.</i>
   <a href="https://elementary.codes#sponsors">
   <picture>
     <source media="(width <= 600px)" srcset="https://elementary.codes/sponsors/sponsors-400.svg" />
