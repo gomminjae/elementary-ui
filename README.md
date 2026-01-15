@@ -35,19 +35,28 @@ struct Counter {
 }
 ```
 
+## Guides & Documentation
+
+- **Guide & Get Started**: [elementary.codes](https://elementary.codes)
+- **API docs**: [Swift Package Index](https://swiftpackageindex.com/elementary-swift/elementary-ui/documentation)
+
 > [!NOTE]
 > ElementaryUI is an actively developed passion project in its early days.
 > Expect sharp edges, APIs may change, and things may break as I balance performance, ergonomics, and feature set.
 >
 > The ambition is simple: make Swift a first-class option for building serious web applications, and keep the project healthy for the long run.
-> 
-> If you want this to exist and keep improving, sponsorship funds the work.  
-> [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/sliemeobn)
 
-## Guides & Documentation
-
-- **Guide & Get Started**: [elementary.codes](https://elementary.codes)
-- **API docs**: [Swift Package Index](https://swiftpackageindex.com/elementary-swift/elementary-ui/documentation)
+<p align="center">
+  Thank you to everyone supporting this open‑source project financially.
+  <br>Please consider joining them by <a href="https://github.com/sponsors/sliemeobn" target="_blank" rel="noopener">sponsoring ElementaryUI</a>.
+  <a href="https://elementary.codes#sponsors">
+  <picture>
+    <source media="(width <= 600px)" srcset="https://elementary.codes/sponsors/sponsors-400.svg" />
+    <source media="(width <= 800px)" srcset="https://elementary.codes/sponsors/sponsors-600.svg" />
+    <img src="https://elementary.codes/sponsors/sponsors-800.svg" alt="Sponsors" />
+  </picture>
+  </a>
+</p>
 
 ## Example
 
